@@ -1,0 +1,16 @@
+SET SERVEROUTPUT ON 
+DECLARE
+A NUMBER
+
+BEGIN
+A:=&U
+a:=0;
+A:=a;
+WHILE a<=A
+LOOP
+A=a+(a+1);
+a:=a+1;
+END LOOP
+
+DBMS_OUTPUT.PUT_LINE('SUM='||A);
+END IF;
